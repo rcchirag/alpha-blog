@@ -1,15 +1,15 @@
-<h1> Articles </h1>
+<h1> Edited Articles </h1>
 
-<% if @articles.errors.any? %>
+<% if @article.errors.any? %>
 Given below are the errors withrespect to creating an article
-  <% @articles.errors.full_messages.each do |msg| %>
+  <% @article.errors.full_messages.each do |msg| %>
     <ul>
       <li> <%= msg %>
     </ul>
   <% end %>
 <% end %>
 
-<%= form_for @articles do |f| %>
+<%= form_for @article do |f| %>
   <p>
     <%= f.label :title %><br/>
     <%= f.text_field :title %>
