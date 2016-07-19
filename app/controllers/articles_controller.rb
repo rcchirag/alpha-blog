@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
   end
 
   def new
-    @articles = Article.new
+    @article = Article.new
   end
 
   def create
@@ -37,6 +37,13 @@ class ArticlesController < ApplicationController
       render 'edit'
     end
 
+  end
+
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+    flash[:notice] = "Article was successfully deleted"
+    redirect_to articles_path
   end
 
   private
