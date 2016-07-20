@@ -1,2 +1,59 @@
+$navbar-default-bg: #999888;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  text-transform: uppercase;
+  color: #fff;
+  float: left;
+}
+#navlist1, #dropdown, #drop-list{
+  color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset-url('download.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
+.footer {
+ margin-top: 10px;
+ padding-top: 5px;
+ border-top: 1px solid #efefef;
+ color: #777;
+}
+
+.footer small {
+  float: left;
+}
+
+.footer ul {
+  float: right;
+  list-style: none;
+}
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

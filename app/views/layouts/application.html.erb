@@ -9,8 +9,10 @@
 <body>
 
   <%= render 'layouts/message' %>
-
-<%= yield %>
-
+  <%= render 'layouts/navbar' %>
+  <div class="container">
+  <%= yield %>
+  <%= render 'layouts/footer' %>
+  </div>
 </body>
 </html>
